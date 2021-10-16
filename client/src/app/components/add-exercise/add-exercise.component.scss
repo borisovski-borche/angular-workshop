@@ -1,0 +1,56 @@
+.exercise__form {
+  width: 500px;
+  padding: 10px;
+  margin: 20px;
+  border: 2px solid lightgray;
+  background-color: #fcfcfc;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    margin-top: 10px;
+  }
+
+  button {
+    align-self: flex-end;
+    width: 100px;
+    margin: 5px;
+    margin-top: 20px;
+    padding: 5px;
+  }
+
+  .form__control-group {
+    display: flex;
+    justify-content: space-between;
+
+    .form__control:nth-child(1) {
+      margin-right: 1rem;
+    }
+  }
+
+  .form__control {
+    display: flex;
+    width: 100%;
+    padding: 5px 0;
+    flex-direction: column;
+    font-size: 18px;
+
+    textarea {
+      font-size: 1rem;
+      font-family: "Rubik", sans-serif;
+    }
+
+    input {
+      font-size: 1rem;
+      height: 1.4rem;
+    }
+  }
+}
+
+input.ng-touched.ng-invalid {
+  border: 2px solid rgb(255, 78, 78);
+}
+
+textarea.ng-touched.ng-invalid {
+  border: 2px solid rgb(255, 78, 78);
+}

@@ -1,0 +1,46 @@
+.exercise__container {
+  background-color: #fcfcfc;
+  border: 2px solid lightblue;
+  margin: 20px;
+  padding: 10px;
+  width: 500px;
+
+  .exercise__controls {
+    button {
+      margin-right: 5px;
+      background-color: lightgreen;
+      border: 1px solid lightgrey;
+      padding: 4px;
+      border-radius: 4px;
+    }
+
+    button:nth-child(2) {
+      background-color: rgb(255, 160, 160);
+    }
+  }
+
+  h2 {
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  .progress__container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+    p {
+      margin: 0;
+    }
+
+    input {
+      height: 1.2rem;
+      width: 70px;
+    }
+  }
+}

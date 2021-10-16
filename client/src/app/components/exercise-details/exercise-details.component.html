@@ -1,0 +1,20 @@
+<div class="exercise__container">
+  <h2 (click)="toggleOpen()">{{ exercise.title | uppercase }}</h2>
+  <div *ngIf="!isOpen">
+    <div>
+      <p>Date: {{ exercise.date | date }}</p>
+      <div class="progress__container">
+        <p>{{ isEditing ? "New Progress: " : "Progress: " }}</p>
+        <p *ngIf="!isEditing">{{ exercise.progress * 10 | percent }}</p>
+        <input *ngIf="isEditing" [(ngModel)]="newProgress" />
+      </div>
+      <p>Description: {{ exercise.description }}</p>
+    </div>
+    <div class="exercise__controls">
+      <button (click)="handleUpdate()">
+        {{ isEditing ? "Finish Update" : "Update Progress" }}
+      </button>
+      <button (click)="onExerciseDelete()">Remove</button>
+    </div>
+  </div>
+</div>
